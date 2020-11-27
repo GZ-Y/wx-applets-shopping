@@ -1,0 +1,21 @@
+.login_input {
+  padding: 30rpx;
+}
+.login_input .text_input,
+.login_input .pass_input {
+  width: 100%;
+  border: 1rpx solid #999;
+}
+.login_option {
+  text-align: center;
+  padding: 0 150rpx;
+}
+.login_option .login_grant {
+  font-size: 45rpx;
+  border: 1rpx solid #999;
+  margin-bottom: 20rpx;
+}
+.login_option .login_register {
+  color: cornflowerblue;
+  font-size: 25rpx;
+}

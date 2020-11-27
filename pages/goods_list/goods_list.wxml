@@ -1,0 +1,22 @@
+<SearchInput></SearchInput>
+<TabsTwo Tabs="{{TabsList}}" binditemChange="itemChange">
+	<view slot="slot_left" wx:if="{{TabsList[0].isActive}}">
+		<view class="goods_list" wx:for="{{goods}}">
+			<view class="goods_image">
+				<navigator url='../goods_detail/goods_detail?goods_id={{item.goods_id}}' >
+					<image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" />
+				</navigator>
+			</view>
+      <view class="goods_content">
+        <view>{{item.goods_name}}</view>
+        <text>￥{{item.goods_price}}</text>
+		  </view>
+		</view>
+
+	</view>
+
+	<view slot="slot_content" wx:elif="{{TabsList[1].isActive}}">
+ 
+	</view>
+	<view slot="slot_right" wx:else>{{TabsList[2].name}}</view>
+</TabsTwo>

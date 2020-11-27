@@ -1,0 +1,16 @@
+.goods_list {
+  display: flex;
+  border-bottom: 1rpx solid #999;
+}
+.goods_list .goods_image {
+  flex: 2;
+  justify-content: center;
+  padding: 10rpx;
+}
+.goods_list .goods_image image {
+  width: 70%;
+}
+.goods_list .goods_content {
+  flex: 3;
+  font-size: 30rpx;
+}

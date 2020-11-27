@@ -1,0 +1,13 @@
+<view class="login_input">
+	用户:<input class="text_input" type="text"></input>
+	密码:<input class="pass_input" type="password"></input>
+</view>
+
+<view class="login_option">
+	<button class="login_grant" open-type="getPhoneNumber" bindtap="getPhoneNumber">
+    登陆授权
+  </button>
+	<navigator class="login_register">
+    还没有帐号?那赶紧注册一个吧！
+  </navigator>
+</view>

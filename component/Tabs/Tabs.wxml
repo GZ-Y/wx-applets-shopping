@@ -1,0 +1,13 @@
+<view>
+  <block wx:for="{{Tabs}}" wx:for-index='item.id' wx:key='item'>
+    <view class="Tabs {{item.isActive === true?'border':''}}" bindtap="itemChange" data-index="{{item.id}}">
+      {{item.name}}
+    </view>
+  </block>
+  <block>
+    <view class="content iconfont icon-shouye" wx:if="{{Tabs[0].isActive}}">{{Tabs[0].name}}</view>
+    <view class="content" wx:elif='{{Tabs[1].isActive}}'>{{Tabs[1].name}}</view>
+    <view class="content" wx:elif='{{Tabs[2].isActive}}'>{{Tabs[2].name}}</view>
+    <view class="content" wx:else>{{Tabs[3].name}}</view>
+  </block>
+</view>

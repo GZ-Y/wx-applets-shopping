@@ -1,0 +1,14 @@
+<view>
+	<block wx:for="{{Tabs}}" wx:for-index='item.id' wx:key='item'>
+		<view class="Tabs {{item.isActive === true?'border':''}}" bindtap="itemChange" data-index="{{item.id}}">
+			{{item.name}}
+		</view>
+	</block>
+	<block>
+		<view class="content">
+			<slot name="slot_left"></slot>
+			<slot name="slot_content"></slot>
+			<slot name="slot_right"></slot>
+		</view>
+	</block>
+</view>
